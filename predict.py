@@ -19,8 +19,8 @@ if not Path('model.pkl').is_file():
                   'max_features': [None, 'sqrt', 'log2'],
                   'max_depth': [None, *[i + 3 for i in range(5)]]}
 
-    # model = GridSearchCV(RandomForestClassifier(n_estimators=100), param_grid, cv=5, verbose=100)
-    model = RandomForestClassifier(n_estimators=100)
+    model = GridSearchCV(RandomForestClassifier(n_estimators=100), param_grid, cv=5, verbose=100)
+    # model = RandomForestClassifier(n_estimators=100)
     model.fit(X_train, y_train)
     
     with open('model.pkl', 'wb') as f:
