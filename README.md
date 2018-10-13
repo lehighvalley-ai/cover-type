@@ -22,4 +22,5 @@ needs to be removed if any changes are made.
 
 So far I've gotten the best results with one run of `RandomForestClassifier`
 with an accuracy of about 90 to 91% but am trying to squeeze a little more
-performance out with `GridSearchCV`. More on that later.
+performance out with `GridSearchCV`. More on that later. (**UPDATE**: I
+managed about 94%.)
