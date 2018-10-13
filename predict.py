@@ -1,9 +1,7 @@
 import pandas as pd
 import pickle
 from pathlib import Path
-from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV, train_test_split
 
